@@ -1,7 +1,7 @@
 <?php
-	namespace Bolt\Api\Request\Constraints\String;
+	namespace Bolt\Validation\Constraints\String;
 
-	use Bolt\Api\Request\Constraint;
+	use Bolt\Validation\Constraint;
 
 	class Length extends Constraint
 	{
