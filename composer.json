@@ -1,0 +1,28 @@
+{
+	"name": "cruxoft/bolt-validation",
+	"description": "Validation module for Bolt",
+	"license": "Apache-2.0",
+	"keywords": [
+		"bolt",
+		"geojson"
+	],
+	"type": "library",
+	"authors": [
+		{
+			"name": "Steve Adams",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"cruxoft/bolt-core": "^0.9.0"
+	},
+	"require-dev": {
+        "cruxoft/dump": "^0.2.2"
+	},
+	"suggest": {},
+	"autoload": {
+		"psr-4": {
+			"Bolt\\": "src"
+		}
+	}
+}
