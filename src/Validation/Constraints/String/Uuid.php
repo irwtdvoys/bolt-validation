@@ -1,9 +1,6 @@
 <?php
 	namespace Bolt\Validation\Constraints\String;
 
-	use Bolt\Validation\Constraint;
-	use Bolt\Exceptions\Validation as Exception;
-
 	class Uuid extends Regex
 	{		
 		public function __construct()
