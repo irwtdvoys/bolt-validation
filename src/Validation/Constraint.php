@@ -17,5 +17,28 @@
 				throw new Exception($this->message());
 			}
 		}
+
+		private function placeholders($string)
+		{
+			$pattern = "/{{ (?'placeholder'[A-z]+) }}/";
+
+			preg_match_all($pattern, $string, $matches);
+
+			foreach ($matches['placeholder'] as $placeholder)
+			{
+				$value = $this->$placeholder;
+
+				switch (true)
+				{
+					case is_array($value):
+						$value = "`" . implode("`, `", $value) . "`";
+						break;
+				}
+
+				$string = str_replace("{{ " . $placeholder . " }}", $value, $string);
+			}
+
+			return $string;
+		}
 	}
 ?>
