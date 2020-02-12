@@ -18,7 +18,7 @@
 			}
 		}
 
-		private function placeholders($string)
+		protected function placeholders($string)
 		{
 			$pattern = "/{{ (?'placeholder'[A-z]+) }}/";
 
