@@ -16,7 +16,9 @@
 		{
 			if ($data === null)
 			{
-				return ($this->message === null) ? "Must be one of the following options: `" . implode("`, `", $this->options) . "`" : $this->message;
+				$message = ($this->message === null) ? "Must be one of the following options: {{ options }}" : $this->message;
+
+				return $this->placeholders($message);
 			}
 
 			$this->message = $data;
