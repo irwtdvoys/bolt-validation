@@ -7,23 +7,19 @@
 	{
 		public $options = array();
 
+		public function __construct($data = null)
+		{
+			parent::__construct($data);
+
+			if (!isset($this->message))
+			{
+				$this->message("Must be one of the following options: {{ options }}");
+			}
+		}
+
 		public function isValid($value): bool
 		{
 			return in_array($value, $this->options) ? true : false;
-		}
-		
-		public function message($data = null)
-		{
-			if ($data === null)
-			{
-				$message = ($this->message === null) ? "Must be one of the following options: {{ options }}" : $this->message;
-
-				return $this->placeholders($message);
-			}
-
-			$this->message = $data;
-
-			return $this;
 		}
 	}
 ?>
