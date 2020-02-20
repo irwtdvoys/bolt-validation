@@ -12,7 +12,7 @@
 
 		public function validate($value): void
 		{
-			if ($this->isValid($value))
+			if (!$this->isValid($value))
 			{
 				throw new Exception($this->message());
 			}
@@ -39,6 +39,18 @@
 			}
 
 			return $string;
+		}
+
+		public function message($data = null)
+		{
+			if ($data === null)
+			{
+				return $this->placeholders($this->message);
+			}
+
+			$this->message = $data;
+
+			return $this;
 		}
 	}
 ?>
