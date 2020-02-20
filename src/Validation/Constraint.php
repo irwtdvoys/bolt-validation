@@ -40,5 +40,17 @@
 
 			return $string;
 		}
+
+		public function message($data = null)
+		{
+			if ($data === null)
+			{
+				return $this->placeholders($this->message);
+			}
+
+			$this->message = $data;
+
+			return $this;
+		}
 	}
 ?>
