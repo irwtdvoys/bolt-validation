@@ -12,7 +12,7 @@
 
 		public function validate($value): void
 		{
-			if ($this->isValid($value))
+			if (!$this->isValid($value))
 			{
 				throw new Exception($this->message());
 			}
