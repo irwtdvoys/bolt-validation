@@ -5,7 +5,7 @@
 
 	class Choice extends Constraint
 	{
-		public $options = array();
+		public array $options = array();
 
 		public function __construct($data = null)
 		{

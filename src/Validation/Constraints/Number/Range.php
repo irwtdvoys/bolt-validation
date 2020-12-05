@@ -5,8 +5,8 @@
 
 	class Range extends Constraint
 	{
-		public $from;
-		public $to;
+		public int $from;
+		public int $to;
 
 		public function __construct($data = null)
 		{

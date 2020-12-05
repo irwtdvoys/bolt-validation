@@ -5,7 +5,7 @@
 
 	class Regex extends Constraint
 	{
-		public $pattern;
+		public string $pattern = "";
 		
 		public function isValid($value): bool
 		{

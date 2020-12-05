@@ -6,7 +6,7 @@
 
 	abstract class Constraint extends Base
 	{
-		public $message;
+		public ?string $message = null;
 
 		abstract public function isValid($value): bool;
 
@@ -18,7 +18,7 @@
 			}
 		}
 
-		protected function placeholders($string)
+		protected function placeholders(string $string): string
 		{
 			$pattern = "/{{ (?'placeholder'[A-z]+) }}/";
 
@@ -41,7 +41,7 @@
 			return $string;
 		}
 
-		public function message($data = null)
+		public function message(string $data = null)
 		{
 			if ($data === null)
 			{
