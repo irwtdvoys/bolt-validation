@@ -20,7 +20,7 @@
 
 		public function isValid($value): bool
 		{
-			return ($value >= $this->from && $value <= $this->to) ? true : false;
+			return $value >= $this->from && $value <= $this->to;
 		}
 	}
 ?>
