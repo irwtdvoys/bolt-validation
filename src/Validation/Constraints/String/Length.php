@@ -5,8 +5,8 @@
 
 	class Length extends Constraint
 	{
-		public $min;
-		public $max;
+		public int $min;
+		public int $max;
 
 		public function __construct($data = null)
 		{

@@ -1,1 +1,1 @@
-# bolt-validation (v0.2.0)
+# bolt-validation (v0.3.0)
