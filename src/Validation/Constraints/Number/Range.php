@@ -5,8 +5,8 @@
 
 	class Range extends Constraint
 	{
-		public $from;
-		public $to;
+		public int $from;
+		public int $to;
 
 		public function __construct($data = null)
 		{
@@ -20,7 +20,7 @@
 
 		public function isValid($value): bool
 		{
-			return ($value >= $this->from && $value <= $this->to) ? true : false;
+			return $value >= $this->from && $value <= $this->to;
 		}
 	}
 ?>

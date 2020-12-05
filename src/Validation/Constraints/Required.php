@@ -17,7 +17,7 @@
 		
 		public function isValid($value): bool
 		{
-			return $value !== null ? true : false;
+			return $value !== null;
 		}
 	}
 ?>

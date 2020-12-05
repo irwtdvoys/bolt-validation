@@ -19,7 +19,7 @@
 		
 		public function isValid($value): bool
 		{
-			return $value === $this->value ? true : false;
+			return $value === $this->value;
 		}
 	}
 ?>

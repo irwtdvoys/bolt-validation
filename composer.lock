@@ -4,23 +4,24 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "855a5943fa7c09f7356fc8a483e028ce",
+    "content-hash": "5dbc5f492adba446d8485d12d460557a",
     "packages": [
         {
             "name": "cruxoft/bolt-core",
-            "version": "0.8.0",
+            "version": "0.10.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/irwtdvoys/bolt-core.git",
-                "reference": "055ca11a2d28181c66f0858051e147f424e85974"
+                "reference": "9dc5691f062b5298c728d949fc7361614e04771b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/irwtdvoys/bolt-core/zipball/055ca11a2d28181c66f0858051e147f424e85974",
-                "reference": "055ca11a2d28181c66f0858051e147f424e85974",
+                "url": "https://api.github.com/repos/irwtdvoys/bolt-core/zipball/9dc5691f062b5298c728d949fc7361614e04771b",
+                "reference": "9dc5691f062b5298c728d949fc7361614e04771b",
                 "shasum": ""
             },
             "require": {
+                "cruxoft/bolt-support": "^0.3.0",
                 "php": "^7"
             },
             "require-dev": {
@@ -47,7 +48,59 @@
                 "bolt",
                 "framework"
             ],
-            "time": "2019-11-10T16:06:59+00:00"
+            "support": {
+                "issues": "https://github.com/irwtdvoys/bolt-core/issues",
+                "source": "https://github.com/irwtdvoys/bolt-core/tree/0.10.3"
+            },
+            "time": "2020-12-05T19:55:50+00:00"
+        },
+        {
+            "name": "cruxoft/bolt-support",
+            "version": "0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/irwtdvoys/bolt-support.git",
+                "reference": "7703d52ec6a282b3a6f9f909ef08aa6ea9d94195"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/irwtdvoys/bolt-support/zipball/7703d52ec6a282b3a6f9f909ef08aa6ea9d94195",
+                "reference": "7703d52ec6a282b3a6f9f909ef08aa6ea9d94195",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.4"
+            },
+            "require-dev": {
+                "cruxoft/dump": "^0.2",
+                "phpunit/phpunit": "^9.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Bolt\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Steve Adams",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Standalone support library for the Bolt Framework",
+            "keywords": [
+                "bolt"
+            ],
+            "support": {
+                "issues": "https://github.com/irwtdvoys/bolt-support/issues",
+                "source": "https://github.com/irwtdvoys/bolt-support/tree/0.3.0"
+            },
+            "time": "2020-11-11T22:31:16+00:00"
         }
     ],
     "packages-dev": [
@@ -88,6 +141,10 @@
                 }
             ],
             "description": "A system for generating structure information about nested variables for use including screen display",
+            "support": {
+                "issues": "https://github.com/irwtdvoys/dump/issues",
+                "source": "https://github.com/irwtdvoys/dump/tree/master"
+            },
             "time": "2018-03-14T14:14:53+00:00"
         }
     ],
@@ -96,6 +153,9 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
-    "platform-dev": []
+    "platform": {
+        "php": "^7.4"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
 }
